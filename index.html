@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szundi Kata</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <main>
+    <form action="/action_page.php" method="POST">
+        <div id="text">
+        <fieldset class="required-field">
+            <legend>Adatok</legend>
+        <label for="vezeteknev">Vezetéknév:</label>
+        <input type="text" id="vezeteknev" name="vezeteknev" placeholder="Kovács" pattern="^[A-Z]{1}[a-z]{2,}" required size="20"><br>
+        <label for="keresztnev">Keresztnév:</label>
+        <input type="text" id="keresztnev" name="keresztnev" placeholder="János" pattern="^[A-Z]{1}[a-z]{4,}" required size="20"><br>
+        </fieldset>
+        </div>
+
+        <div id="radio">
+        <fieldset>
+            <legend>Mai ebéd</legend>
+        <input type="radio" id="spagetti" name="mai_ebed" value="spagetti">
+        <label for="spagetti">Spagetti</label>
+        <input type="radio" id="kacsasült" name="mai_ebed" value="kacsasült">
+        <label for="kacsasült">Kacsasült</label>
+        <input type="radio" id="hal_rizzsel" name="mai_ebed" value="hal_rizzsel">
+        <label for="hal_rizzsel">Hal rizzsel</label><br><br>
+        </fieldset>
+        </div>
+
+        <div id="checkbox">
+        <fieldset>
+            <legend>Fizetés módja</legend>
+        <input type="checkbox" id="anyanak_puszi" name="fizetes_modja" value="anyanak_puszi">
+        <label for="anyanak_puszi"> Anyának puszi</label>
+        <input type="checkbox" id="bankkartya" name="fizetes_modja" value="bankkartya">
+        <label for="bankkartya"> Bankkártya</label>
+        <input type="checkbox" id="koszonom" name="fizetes_modja" value="koszonom">
+        <label for="koszonom"> Köszönöm</label><br><br>
+        <input type="submit" value="Küldés">
+        </fieldset>
+        </div>
+    </form>
+    </main>
+</body>
+</html>

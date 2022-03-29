@@ -1,0 +1,29 @@
+main{
+    background-color: #fcd5ce;
+    margin: auto;
+    max-width: 800px;
+}
+
+fieldset{
+    border: 1px solid #e8a598;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+form{
+    padding: 10px;
+} 
+
+#vezeteknev, #keresztnev{
+   padding: 5px;
+   margin-right: 20px;
+}
+
+legend{
+    background-color: white;
+    border-radius: 5px;
+    color: #e8a598;
+    padding: 5px;
+    margin: 5px;
+}
